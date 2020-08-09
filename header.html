@@ -9,23 +9,74 @@
 <style>
   body {
     margin: 0px;
+    background-color: #2211cc;
+    background-image: linear-gradient(90deg, #2211cc 0%, #3156e4 36%, #0093E9 65%, #21c08b 92%);
   }
-  header {
+  .header {
     background-color: #2211cc;
     background-image: linear-gradient(90deg, #2211cc 0%, #3156e4 36%, #0093E9 65%, #21c08b 92%);
     width: 100%;
     height: 80px;
   }
-  header img {
+  .header__img {
     width: 200px;
     margin-top: 10px;
     margin-left: 10px;
   }
+  .header__menu{
+    margin-right: 30px;
+  }
+  .header__menu ul{
+    /* display: none; */
+    list-style: none;
+    padding: 0px;
+    position: absolute;
+    width: 100px;
+    text-align: right;
+    margin: 0px 0px 0px -14px;
+  }
+  .header__menu ul li a{
+    color: black;
+  }
+  .header__menu--profile{
+    margin-right: 8px;
+    width: 40px;
+    margin-bottom: 0px;
+  }
+  .imagen-perfil{
+    border-radius: 50%;
+    border: none;
+    background: none;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+}
+  .imagen-perfil img{
+     width: 58px;
+     height: 54px;
+     border-radius: 50%;
+    }
+  .imagen-perfil p{
+    margin: 0px;
+  }
+
 </style>
 <body>
-  <header>
-    <img src="image/logo-platzi-video-BW2.png" alt="Logo Platzi Video">
-    <img src="image/logofehler.png" alt="Logo Platzi Video">
+  <header class="header">
+    <img class="header__img" src="image/logo-platzi-video-BW2.png" alt="Logo Platzi Video">
+    <img class="header__img" src="image/logofehler.png" alt="Logo Platzi Video">
+    <div class="header__menu">
+      <div class="header__menu--profile">
+        <button class="imagen-perfil">
+          <img src="image/icon-user.png" alt="user">
+          <p>Perfil</p>
+        </button>
+      </div>
+      <ul>
+        <li><a href="/">Cuenta</a></li>
+        <li><a href="/">Cerrar Sesi&oacute;n</a></li>
+      </ul>
+    </div>
   </header>
   
 </body>
