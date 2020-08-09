@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
   <title>Header</title>
 </head>
 <style>
   body {
     margin: 0px;
+    font-family: 'Mulish', sans-serif;
     background-color: #2211cc;
     background-image: linear-gradient(90deg, #2211cc 0%, #3156e4 36%, #0093E9 65%, #21c08b 92%);
   }
@@ -17,6 +19,9 @@
     background-image: linear-gradient(90deg, #2211cc 0%, #3156e4 36%, #0093E9 65%, #21c08b 92%);
     width: 100%;
     height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .header__img {
     width: 200px;
@@ -24,40 +29,87 @@
     margin-left: 10px;
   }
   .header__menu{
-    margin-right: 30px;
+    margin-right: 20px;
   }
   .header__menu ul{
-    /* display: none; */
+    display: none;
     list-style: none;
     padding: 0px;
     position: absolute;
     width: 100px;
     text-align: right;
-    margin: 0px 0px 0px -14px;
+    margin: 0px 0px 0px 0px;
+  }
+  .header__menu:hover ul, ul:hover{
+    display: block;
+  }
+  .header__menu li{
+    margin: 10px 0px;
   }
   .header__menu ul li a{
-    color: black;
+    color:white;
+    text-decoration-line: none;
+  }
+  .header__menu li a:hover{
+    text-decoration-line: underline;
   }
   .header__menu--profile{
-    margin-right: 8px;
-    width: 40px;
+    margin-right: 0px;
+    /* width: 40px; */
     margin-bottom: 0px;
   }
   .imagen-perfil{
     border-radius: 50%;
     border: none;
     background: none;
-    font-size: 20px;
+    font-size: 17px;
     padding-left: 10px;
     padding-bottom: 0px;
-}
+    display: flex;
+    align-items: center;
+  }
   .imagen-perfil img{
-     width: 58px;
-     height: 54px;
-     border-radius: 50%;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     }
   .imagen-perfil p{
     margin: 0px;
+    color: white;
+  }
+  .main{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .main__title{
+    color: white;
+    font-size: 25px;
+  }
+  .input{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    outline: none;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    height: 30px;
+    padding: 0px 20px;
+    width: 70%;
+    
+    background: url('image/buscador.png');
+    background-repeat: no-repeat;
+    background-size: 1.5em;
+    background-position: center;
+    background-position-x: 95%;
+  }
+  ::placeholder{
+    color: white;
   }
 
 </style>
@@ -78,6 +130,9 @@
       </ul>
     </div>
   </header>
-  
+  <section class="main">
+    <h2 class="main__title">¿Qu&eacute; quieres ver hoy?</h2>
+    <input class="input" type="text" placeholder="Buscar..." >
+  </section>
 </body>
 </html>
