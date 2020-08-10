@@ -1,0 +1,99 @@
+.header {
+  background-color: #2211cc;
+  background-image: linear-gradient(90deg, #2211cc 0%, #3156e4 36%, #0093E9 65%, #21c08b 92%);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__img {
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.header__menu{
+  margin-right: 20px;
+}
+.header__menu ul{
+  display: none;
+  list-style: none;
+  padding: 0px;
+  position: absolute;
+  width: 100px;
+  text-align: right;
+  margin: 0px 0px 0px 0px;
+}
+.header__menu:hover ul, ul:hover{
+  display: block;
+}
+.header__menu li{
+  margin: 10px 0px;
+}
+.header__menu ul li a{
+  color:white;
+  text-decoration-line: none;
+}
+.header__menu li a:hover{
+  text-decoration-line: underline;
+}
+.header__menu--profile{
+  margin-right: 0px;
+  /* width: 40px; */
+  margin-bottom: 0px;
+}
+.imagen-perfil{
+  border-radius: 50%;
+  border: none;
+  background: none;
+  font-size: 17px;
+  padding-left: 10px;
+  padding-bottom: 0px;
+  display: flex;
+  align-items: center;
+}
+.imagen-perfil img{
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  }
+.imagen-perfil p{
+  margin: 0px;
+  color: white;
+}
+.main{
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.main__title{
+  color: white;
+  font-size: 25px;
+}
+.input{
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+  outline: none;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  height: 50px;
+  padding: 0px 20px;
+  width: 70%;
+  outline: none;
+  
+  background: url('image/buscador.png');
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+  background-position: center;
+  background-position-x: 95%;
+}
+::placeholder{
+  color: white;
+}
