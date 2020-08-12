@@ -1,6 +1,10 @@
+body {
+  margin: 0px;
+  font-family: 'Mulish', sans-serif;
+  background: linear-gradient(90deg, #2211cc 0%, #3156e4 20%, #0093E9 50%, #21c08b 90%);
+}
 .header {
-  background-color: linear-gradient(90deg, #2211cc 0%, #3156e4 36%, #0093E9 65%, #21c08b 92%);
-  background-image: linear-gradient(90deg, #2211cc 0%, #3156e4 36%, #0093E9 65%, #21c08b 92%);
+  background: linear-gradient(90deg, #2211cc 0%, #3156e4 20%, #0093E9 50%, #21c08b 90%);
   width: 100%;
   height: 100px;
   display: flex;
@@ -89,10 +93,9 @@
   padding: 0px 20px;
   width: 70%;
   outline: none;
-  
-  background: url('image/buscador.png');
+  background: url('../image/buscador.png');
   background-repeat: no-repeat;
-  background-size: 1.5em;
+  background-size: 25px;
   background-position: center;
   background-position-x: 95%;
 }

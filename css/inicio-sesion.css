@@ -21,7 +21,7 @@ margin-left: 10px;
 display: block;
 }
 .login {
-  background: linear-gradient(#2211cc 0%, #3156e4 36%, #0093E9 65%, #21c08b 92%);
+  background: linear-gradient(#2211cc 0%,#21c08b 92%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,12 +61,18 @@ display: block;
 }
 .login__container--remember-me a:hover{
   text-decoration: underline;
+  color: aqua;
 }
 .login__container--social-media > div{
   display: flex;
   align-items: center;
   font-size: 14px;
   margin-bottom: 10px;
+  cursor: pointer;
+}
+.login__container--social-media > div:hover{
+  text-decoration: underline;
+  color: aqua;
 }
 .login__container--social-media > div > img{
   width: 30px;
@@ -76,15 +82,19 @@ display: block;
   font-size: 14px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .login__container--register a{
   font-size: 16px;
   font-weight: bold;
   color: white;
   text-decoration: none;
+  letter-spacing: 2px;
+  margin-left: 5px;
 }
 .login__container--register a:hover{
   text-decoration: underline;
+  color: aqua;
 }
 .input{
   background-color: transparent;
@@ -97,6 +107,11 @@ display: block;
   margin-bottom: 20px;
   padding: 0px 20px;
   outline: none;
+}
+.input:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 30px;
+  border-radius: 10px;
 }
 
 ::placeholder{
@@ -114,21 +129,9 @@ display: block;
   height: 50px;
   letter-spacing: 1px;
   margin: 10px 0px;
+  outline: none;
 }
-.footer{
-  display: flex;
-  align-items: center;
-  height: 100px;
-  width: 100%;
-  background: #21c08b;
-}
-.footer a{
-  color: white;
-  cursor: pointer;
-  font-size: 14px;
-  padding: 30px;
-  text-decoration: none;
-}
-.footer a:hover{
-  text-decoration: underline;
+.button:hover{
+  background:rgba(7, 247, 247, 0.4);
+  color: aqua;
 }
