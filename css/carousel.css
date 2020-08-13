@@ -1,3 +1,8 @@
+.categories__titulos{
+  color: white;
+  font-size: 16px;
+  padding-left: 16px;
+} */
 .carousel{
   width: 100%;
   overflow-x: scroll;
