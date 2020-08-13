@@ -16,7 +16,6 @@ body {
   width: 150px;
   margin-top: 5px;
   margin-left: 10px;
-  display: block;
 }
 .header__menu{
   margin-right: 20px;
@@ -28,7 +27,7 @@ body {
   position: absolute;
   width: 100px;
   text-align: right;
-  margin: 0px 0px 0px 0px;
+  margin: 0px;
 }
 .header__menu:hover ul, ul:hover{
   display: block;
@@ -42,6 +41,7 @@ body {
 }
 .header__menu li a:hover{
   text-decoration-line: underline;
+  color: aqua;
 }
 .header__menu--profile{
   margin-right: 0px;
@@ -92,12 +92,14 @@ body {
   height: 50px;
   padding: 0px 20px;
   width: 70%;
-  outline: none;
   background: url('../image/buscador.png');
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
   background-position-x: 95%;
+}
+.input:hover{
+  background-color: rgba(255, 255, 255, 0.2);
 }
 ::placeholder{
   color: white;

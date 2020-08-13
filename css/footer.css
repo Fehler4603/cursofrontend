@@ -3,7 +3,7 @@
   align-items: center;
   height: 100px;
   width: 100%;
-  background: #21c08b;
+  background: #linear-gradient(90deg #2211cc 0%, #3156e4 30%, #0093E9 50%, #21c08b 90%);
 }
 .footer a{
   color: white;

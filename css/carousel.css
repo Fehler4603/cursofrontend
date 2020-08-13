@@ -2,20 +2,21 @@
   color: white;
   font-size: 16px;
   padding-left: 16px;
-} */
+  position: absolute;
+}
 .carousel{
-  width: 100%;
   overflow-x: scroll;
+  scrollbar-width: none;
+  padding-top: 25px;
   padding-left: 20px;
   position: relative;
 }
 .carousel__container{
   white-space: nowrap;
   margin: 70px 0px;
-  padding-bottom: 10px;
 }
 .carousel-item{
-  background-color: blue;
+  background-color: linear-gradient(90deg #2211cc 0%, #3156e4 30%, #0093E9 50%, #21c08b 90%);
   width: 200px;
   height: 250px;
   border-radius: 20px;
@@ -75,13 +76,20 @@
 }
 .carousel::-webkit-scrollbar {
   width: 10px;
-  background-color: #2211cc;
-  background-image: linear-gradient(100deg, #2211cc 0%, #3156e4 36%, #0093E9 65%, #21c08b 92%);
+  height: 15px;
+  background-color: linear-gradient(90deg #2211cc 0%, #3156e4 30%, #0093E9 50%, #21c08b 90%);
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.carousel::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .carousel::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-  border: 20px solid linear-gradient(100deg, #2211cc 0%, #3156e4 36%, #0093E9 65%, #21c08b 92%);
-  outline: 1px solid slategrey;
+  border: 2px solid white 
 } 
+::-webkit-scrollbar:hover:active{
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
