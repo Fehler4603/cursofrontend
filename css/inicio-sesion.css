@@ -135,3 +135,57 @@ display: block;
   background:rgba(7, 247, 247, 0.4);
   color: aqua;
 }
+.footer{
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background: #21c08b;
+}
+.footer a{
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 30px;
+  text-decoration: none;
+}
+.footer a:hover{
+  text-decoration: underline;
+  color:aqua;
+}
+@media only screen and (max-width: 480px){
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .login__container h2{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+  }
+  .login__container{
+    min-height: 480px;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    width: 100%;
+  }  
+  .footer{
+    display: block;
+    text-align: center;
+  }
+  .login__container--social-media > div{
+    justify-content: center;
+  }
+  .login__container--register{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .login__container--register a{
+    letter-spacing: 1px;
+  }
+  .header__img {
+    width: 200px;
+}
