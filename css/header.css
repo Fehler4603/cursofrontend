@@ -2,6 +2,7 @@ body {
   margin: 0px;
   font-family: 'Mulish', sans-serif;
   background: linear-gradient(90deg, #2211cc 0%, #3156e4 20%, #0093E9 50%, #21c08b 90%);
+  width: min-content(100%);
 }
 .header {
   background: linear-gradient(90deg, #2211cc 0%, #3156e4 20%, #0093E9 50%, #21c08b 90%);
@@ -100,6 +101,7 @@ body {
 }
 .input:hover{
   background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid aqua;
 }
 ::placeholder{
   color: white;

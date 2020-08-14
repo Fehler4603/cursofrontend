@@ -3,8 +3,10 @@
   font-size: 16px;
   padding-left: 16px;
   position: absolute;
+  width: min-content(100%);
 }
 .carousel{
+  width: min-content(100%);
   overflow-x: scroll;
   scrollbar-width: none;
   padding-top: 25px;
