@@ -12,13 +12,13 @@ height: 100px;
 display: flex;
 justify-content: space-between;
 align-items: center;
+flex-wrap: wrap;
 }
 
 .header__img {
 width: 150px;
 margin-top: 5px;
 margin-left: 10px;
-display: block;
 }
 .login {
   background: linear-gradient(#2211cc 0%, #21c08b 92%);
@@ -151,4 +151,43 @@ display: block;
 .footer a:hover{
   text-decoration: underline;
   color:aqua;
+}
+@media only screen and (max-width: 600px){
+  .header{
+    display: block;
+    text-align: center;
+  }
+  .login__container h2{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    margin-top: 60px;
+    color: aqua;
+  }
+  .login__container{
+    min-height: 480px;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    width: 100%;
+  }  
+  .footer{
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .login__container--social-media > div{
+    justify-content: center;
+  }
+  .login__container--register{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .login__container--register a{
+    letter-spacing: 1px;
+  }
+  .header__img {
+    width: 200px;
+  }
 }

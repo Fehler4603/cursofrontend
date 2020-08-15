@@ -2,7 +2,6 @@ body {
   margin: 0px;
   font-family: 'Mulish', sans-serif;
   background: linear-gradient(90deg, #2211cc 0%, #3156e4 20%, #0093E9 50%, #21c08b 90%);
-  width: min-content(100%);
 }
 .header {
   background: linear-gradient(90deg, #2211cc 0%, #3156e4 20%, #0093E9 50%, #21c08b 90%);
@@ -105,4 +104,55 @@ body {
 }
 ::placeholder{
   color: white;
+}
+
+@media only screen and (max-width: 600px){
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header__menu li{
+    margin: 0px 0px;
+  }
+  .login__container h2{;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+  }
+  .login__container{
+    min-height: 480px;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    width: 100%;
+  }  
+  .main__title{
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+  }
+  .footer{
+    display: block;
+    text-align: center;
+  }
+  .login__container--social-media > div{
+    justify-content: center;
+  }
+  .login__container--register{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .login__container--register a{
+    letter-spacing: 1px;
+  } 
+}
+
+@media only screen and (max-width: 450px){
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
