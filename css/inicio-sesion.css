@@ -48,6 +48,11 @@ margin-left: 10px;
   justify-content: space-around;
   flex-direction: column;
 }
+.login__container h2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .login__container--form{
   display: flex;
   flex-direction: column;
@@ -69,6 +74,12 @@ margin-left: 10px;
 .login__container--remember-me a:hover{
   text-decoration: underline;
   color: aqua;
+}
+.login__container--social-media{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
 }
 .login__container--social-media > div{
   display: flex;
